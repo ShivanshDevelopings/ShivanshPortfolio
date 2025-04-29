@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    scroll-behavior: smooth;
+  }
+  header {
+    background: #333;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  nav {
+    max-width: 960px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .logo {
+    color: white;
+    font-size: 26px;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  nav li {
+    margin-left: 20px;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    font-weight: bold;
+  }
+  nav a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    background: white;
+    transition: 0.3s ease;
+  }
+  nav a:hover::after {
+    width: 100%;
+  }
+  
+  section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+  }
+  .project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .project {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    flex: 1 1 250px;
+    transition: transform 0.3s ease;
+  }
+  .project:hover {
+    transform: translateY(-5px);
+  }
+  footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  .reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease-out;
+  }
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+  }
+  .btn:hover {
+    background-color: #388E3C;
+  }
+    
